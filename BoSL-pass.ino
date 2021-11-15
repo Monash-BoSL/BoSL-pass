@@ -6,9 +6,16 @@
 // For SIM7000 BoSL board
 #define PWRKEY 4
 #define DTR 5 // Connect with solder jumper
-#define BOSL_RX 9// Microcontroller RX
-#define BOSL_TX 8 // Microcontroller TX
 
+#define REV 0-3-x
+
+#if REV == 0-4-x
+    #define BOSL_RX 9// Microcontroller RX
+    #define BOSL_TX 8// Microcontroller TX
+#elif REV == 0-3-x
+    #define BOSL_RX 3// Microcontroller RX
+    #define BOSL_TX 2// Microcontroller TX
+#endif
 
 SoftwareSerial simCom = SoftwareSerial(BOSL_RX, BOSL_TX);
  
