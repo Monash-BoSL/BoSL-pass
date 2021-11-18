@@ -1,2 +1,2 @@
 # BoSL-pass
-Simple serial pass-through for SIM7000
+Simple passthrough using softserial for arduino ATmega328P. Currently focused on a passthrough for the SIMCOM SIM7000 LTE module. 
